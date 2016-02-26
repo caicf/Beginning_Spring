@@ -1,9 +1,13 @@
 package com.caicf.beginning.spring.impl;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 import com.caicf.beginning.spring.dao.AccountDao;
 import com.caicf.beginning.spring.entity.Account;
 import com.caicf.beginning.spring.service.AccountService;
 
+@Service
 public class AccountServiceDaoImpl implements AccountService{
 
 	private AccountDao accountDao;
@@ -11,7 +15,8 @@ public class AccountServiceDaoImpl implements AccountService{
 	public AccountDao getAccountDao() {
 		return accountDao;
 	}
-
+	
+	@Autowired
 	public void setAccountDao(AccountDao accountDao) {
 		this.accountDao = accountDao;
 	}

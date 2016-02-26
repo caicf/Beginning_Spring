@@ -4,9 +4,12 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.springframework.stereotype.Repository;
+
 import com.caicf.beginning.spring.dao.AccountDao;
 import com.caicf.beginning.spring.entity.Account;
 
+@Repository
 public class AccountDaoImpl implements AccountDao {
 
 	private Map<Integer, Account> accountMap=new HashMap<Integer, Account>();
