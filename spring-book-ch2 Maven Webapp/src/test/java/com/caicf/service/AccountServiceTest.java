@@ -26,6 +26,7 @@ public class AccountServiceTest {
 	@Test
 	public void test() {
 		AccountService accountService=applicationContext.getBean("accountService",AccountService.class);
+		
 		System.out.println("======================");
 		System.out.println(accountService.getAccount(1).getBalance());
 		System.out.println(accountService.getAccount(2).getBalance());
